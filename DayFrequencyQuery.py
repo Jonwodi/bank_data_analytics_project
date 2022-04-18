@@ -10,7 +10,8 @@ class DayFrequencyQuery:
 
     def get_frequencies(self):
         days = [row[8].title() for row in self.reader.read()]
-        # for loop that calculates the frequented week day to bank atm
+
+        # for loop that calculates the frequency of bank vists per week day
         frequencies = {}
         for day in days:
             if day in frequencies:
@@ -47,7 +48,7 @@ class DayFrequencyQuery:
 
         plt.setp(autotexts, size=6, weight="bold")
 
-        ax.set_title("Frequency of bank ATM vists per week day")
+        ax.set_title("Frequency of bank ATM transactions per week day")
 
         plt.show()
 

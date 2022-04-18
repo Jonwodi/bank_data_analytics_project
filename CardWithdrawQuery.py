@@ -8,6 +8,7 @@ class CardWithdrawQuery:
     def __init__(self, csv_file):
         self.reader = CsvReader(csv_file)
 
+    # function to retrieve the average card withdrawals for XYZ cards and Other cards
     def get_means(self):
         xyz_data = []
         other_data = []
@@ -28,7 +29,7 @@ class CardWithdrawQuery:
         data = self.get_means()[0]  # average amout of xyz card withdrawals
         data2 = self.get_means()[1]  # average amout of other card withdrawals
 
-        labels = ["Average number of card withdrawals per card type"]  # x axis label
+        labels = ["Average number of card withdrawals per day"]  # x axis label
         xyz_means = data
         other_means = data2
 
@@ -44,7 +45,7 @@ class CardWithdrawQuery:
         )
 
         # Add some text for labels, title and custom x-axis tick labels, etc.
-        ax.set_ylabel("Percentage scores (%)")
+        ax.set_ylabel("scores")
         ax.set_title("Number of card withdrawals comparison")
         ax.set_xticks(x, labels)
         ax.legend()

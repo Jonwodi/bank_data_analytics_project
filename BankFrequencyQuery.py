@@ -26,7 +26,7 @@ class BankFrequencyQuery:
         return "{:.1f}%\n({:d}\nvists)".format(pct, absolute)
 
     def run(self):
-        fig, ax = plt.subplots(figsize=(6, 3), subplot_kw=dict(aspect="equal"))
+        fig, ax = plt.subplots(figsize=(10, 3), subplot_kw=dict(aspect="equal"))
 
         data = list(self.get_frequencies().values())  # list of frequency of bank vists
 
@@ -41,7 +41,7 @@ class BankFrequencyQuery:
         ax.legend(
             wedges,
             bank_atms,
-            title="Bank ATMs",
+            title="Bank ATM names",
             loc="center left",
             bbox_to_anchor=(1, 0, 0.5, 1),
         )

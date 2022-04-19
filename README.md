@@ -1,3 +1,10 @@
+Below are the queries that you can run:
+ 
+- [x] Bank Frequency Query
+- [x] Card Withdraw Query
+- [x] Day Frequency Query
+- [x] Festival Relgion Query
+
 ## Install pipenv
 pip install pipenv
 

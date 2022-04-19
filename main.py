@@ -1,7 +1,7 @@
-from BankFrequencyQuery import BankFrequencyQuery
-from CardWithdrawQuery import CardWithdrawQuery
-from DayFrequencyQuery import DayFrequencyQuery
-from FestivalRelgionQuery import FestivalRelgionQuery
+from queries.BankFrequencyQuery import BankFrequencyQuery
+from queries.CardWithdrawQuery import CardWithdrawQuery
+from queries.DayFrequencyQuery import DayFrequencyQuery
+from queries.FestivalRelgionQuery import FestivalRelgionQuery
 
 
 # if I have a CSV file without a header then reader.read(header=False)

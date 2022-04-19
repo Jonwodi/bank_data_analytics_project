@@ -37,7 +37,6 @@ class BankFrequencyQuery:
         )
 
         bank_atms = list(self.get_frequencies().keys())  # list of bank atms
-
         ax.legend(
             wedges,
             bank_atms,
